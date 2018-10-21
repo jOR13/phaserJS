@@ -11,10 +11,10 @@ GamePlayManager = {
     },
     create: function() {
         game.add.sprite(0,0,'background');
-        this.horse=game.add.sprite(0,0,'horse');
-        this.horse.frame=1;
-        this.horse.x=game.width/2;
-        this.horse.y=game.heigth/2;
+        this.horse = game.add.sprite(0,0,'horse');
+        this.horse.frame=0;
+        this.horse.x = game.width/2;
+        this.horse.y = game.heigth/2;
     },
     update: function() {
         console.log("update");
