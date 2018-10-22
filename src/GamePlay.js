@@ -21,6 +21,8 @@ GamePlayManager = {
         this.horse.anchor.setTo(0.5);
         
         game.input.onDown.add(this.onTap, this);
+        
+        teclaDerecha = game.input.keyboard.addkey(Phaser.Keyboard.RIGHT);
     },
     
     onTap: function(){
@@ -48,6 +50,11 @@ GamePlayManager = {
         this.horse.x += distX * .04;
         this.horse.y += distY * .04;
         this.horse.y += distY * .04;
+           
+           
+           if(teclaDerecha.isDown){
+            this.horse.dist.x+=1;
+           }
        }
     }
 }
