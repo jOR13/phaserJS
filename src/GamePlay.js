@@ -8,7 +8,7 @@ GamePlayManager = {
         this.flagFirstMouseDown =false;
     },
     preload: function() {
-        game.load.image('background', 'assets/images/background.png');
+        game.load.image('background', 'assets/images/bg.jpg');
         game.load.spritesheet('horse', 'assets/images/horse.png',84,156,2);
         game.load.spritesheet('diamonds', 'assets/images/diamonds.png',81,84,4);
     },
