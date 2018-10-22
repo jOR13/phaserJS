@@ -53,7 +53,7 @@ GamePlayManager = {
            
            
            if(teclaDerecha.isDown){
-            this.horse.distX +=1;
+            this.horse.position.x +=1;
            }
        }
     }
