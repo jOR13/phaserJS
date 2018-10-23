@@ -8,7 +8,7 @@ GamePlayManager = {
         this.flagFirstMouseDown =false;
     },
     preload: function() {
-        game.load.image('background', 'assets/images/bg.jpg');
+        game.load.image('background', 'assets/images/background.png');
         game.load.spritesheet('horse', 'assets/images/horse.png',84,156,2);
         game.load.spritesheet('diamonds', 'assets/images/diamonds.png',81,84,4);
     },
@@ -21,8 +21,6 @@ GamePlayManager = {
         this.horse.anchor.setTo(0.5);
         
         game.input.onDown.add(this.onTap, this);
-        
-        teclaDerecha = game.input.keyboard.addkey(Phaser.Keyboard.RIGHT);
     },
     
     onTap: function(){
@@ -50,8 +48,6 @@ GamePlayManager = {
         this.horse.x += distX * .04;
         this.horse.y += distY * .04;
         this.horse.y += distY * .04;
-           
-          
        }
     }
 }
