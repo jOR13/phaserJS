@@ -36,24 +36,11 @@ GamePlayManager = {
         var pointerX = game.input.x;
         var pointerY = game.input.y;
         
-        var distX = pointerX - this.horse.x;
-        var distY = pointerY - this.horse.y;
-        
-        if(distX>0){
-            this.horse.scale.setTo(1,1);
-        }else{
-            
-            this.horse.scale.setTo(-1,1);
-        }
-        
-        
-        this.horse.x += distX * .04;
-        this.horse.y += distY * .04;
-        this.horse.y += distY * .04;
+       
            
            
            if(teclaDerecha.isDown){
-            this.horse.position.x +=1;
+            this.horse.distX +=1;
            }
        }
     }
